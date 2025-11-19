@@ -1,0 +1,15 @@
+
+Summary of processing:
+- Trades rows after cleaning: 211224
+- Aggregated account-date rows: 480
+- Merged rows with sentiment: 480
+- T-test result (fear vs greed) on total_pnl: Ttest_indResult(statistic=1.806332498892865, pvalue=0.07354472443605162)
+- Mann-Whitney U test: MannwhitneyuResult(statistic=14901.0, pvalue=0.06577817795201414)
+- Spearman correlation: SpearmanrResult(correlation=-0.004116960986151004, pvalue=0.9306762559200383)
+- Baseline logistic regression accuracy: 0.9, ROC AUC: 0.8944444444444445
+
+Saved files:
+- /mnt/data/csv_files/daily_agg_by_account.csv
+- /mnt/data/csv_files/merged_daily_with_sentiment.csv
+- /mnt/data/outputs/*.png (plots)
+- /mnt/data/outputs/logreg_coefficients.csv
